@@ -1,0 +1,95 @@
+* {
+background-color:rgb(55, 55, 61);
+}
+
+/* SOURCE https://www.youtube.com/watch?v=oZPR_78wCnY&t=370s */
+
+:root {
+    --color: rgba(232, 102, 236, 1);
+    --pre-color: white;
+
+}
+
+header {
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: violet;
+    padding: 5px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--color);
+    padding: 5px 20px;
+}
+
+/* SOURCE https://www.youtube.com/watch?v=oZPR_78wCnY&t=370s */
+
+h3 {
+    color: var(--color);
+}
+
+p {
+    color: var(--color);
+}
+
+pre {
+    color: var(--pre-color)
+}
+
+/*FLEXBOX ROW*/
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*FLEXBOX COLUMN*/
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/*CSS GRID LAYOUT*/
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat (12, 1fr);
+}
+
+/*LINEAR GRADIENTS*/
+
+.linear-gradient-background {
+    background-image: linear-gradient (
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+    );
+}
+
+/*BOX TRANSITION GLOW*/
+
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+    box-shadow:inset 8px 0px 8px rgba(232, 102, 236, 1),
+    0 0 15px rgba(232, 102, 236, 1);
+}
+
+/*OVERLAY CARD WITH TITLE*/
+
+.card-header {
+    position: relative;
+    margin-top: -20px;
+}
+
+footer {
+    text-align: center;
+}
